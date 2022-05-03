@@ -56,7 +56,7 @@ public class MyFrame extends JFrame implements ActionListener{
 			JOptionPane.showMessageDialog(this, "삭제합니다.");
 		}
 		}
-		//.showMessageDialog(알림을 띄울 프레임의 참조값,띄울 메세지)
+		
 		
 		
    

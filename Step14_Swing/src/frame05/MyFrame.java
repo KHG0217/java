@@ -40,6 +40,7 @@ public class MyFrame extends JFrame{
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			System.out.println("삭제?");
+			//.showMessageDialog(알림을 띄울 프레임의 참조값,띄울 메세지)
 			JOptionPane.showMessageDialog(MyFrame.this, "삭제합니다.");
 		}
 	};	
