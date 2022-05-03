@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 
 public class Frame01 extends JFrame implements ActionListener{
    
-    //생성자
+   //생성자
    public Frame01() {
       //레이아웃 설정 
       setLayout(new BorderLayout());
