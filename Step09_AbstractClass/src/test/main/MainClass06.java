@@ -19,6 +19,7 @@ public class MainClass06 {
 				System.out.println("공격해버려");				
 			}
 		});
+		w1.attack();
 	}
 	
 	

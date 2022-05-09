@@ -1,7 +1,4 @@
 package test.main;
-
-import java.io.PrintStream;
-
 import test.mypac.HandPhone;
 import test.mypac.Phone;
 import test.mypac.SmartPhone;
@@ -18,7 +15,12 @@ public class MainClass03 {
 		Object p3=p1;
 		
 		//자식객체의 참조값은 부모 type변수나 필드에 자연스럽게 담긴다.
+		Phone p4 = new SmartPhone();
 		
-		SmartPhone p4=(SmartPhone)p1;
+		//부모객체를 자식 type에 담을수는 없다.
+		//SmartPhone p5 = new Phone(); x
+		
+		
+	
 	}
 }

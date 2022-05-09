@@ -12,6 +12,8 @@ public class MainClass13 {
 		names.add("원숭이");
 		names.add("주뎅이");
 		names.add("덩어리");
+		int a=names.size();
+		
 		
 		//반복자(Iterator) 객체 얻어내기 (저장된 item을 일렬로 세웠다고 생각하면됨)
 		Iterator<String> it=names.iterator();

@@ -1,7 +1,5 @@
 package test.main;
 
-import java.util.ArrayList;
-
 import test.mypac.Remocon;
 
 public class MainClass04 {

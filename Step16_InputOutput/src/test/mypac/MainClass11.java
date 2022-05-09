@@ -16,7 +16,7 @@ public class MainClass11 {
 			//memo.txt에 문자열을 출력할 수 있는 객체생성
 			FileWriter fw=new FileWriter(memoFile);
 			fw.write("김구라");
-			fw.write("\r\n"); //계행기호
+			fw.write("\r\n"); //개행기호
 			fw.write("\t해골"); // \t는 tab 들여쓰기
 			fw.write("\r\n");
 			fw.write("원숭이");

@@ -21,7 +21,6 @@ public class MainClass15 {
 						break;				
 					fos.write(d);
 					fos.flush();//방출 -> 안해주면 모여있다가 한번에 나감
-					System.out.println("복사성공");
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
