@@ -119,7 +119,11 @@ public class TestFrame extends JFrame implements ActionListener{
 	         }
 
 	      }else if(command.equals("delete")){
-	         dao.delete(table.getSelectedRow());
+	    	  int selectedIndex=table.getSelectedRow();
+
+	    	  int num=(int) model.getValueAt(selectedIndex, 0);
+	    	  dao.delete(num);
+	    	
 	         //커서가 가르키는거에 번호를 넣어야되는데 ?
 	         table.getSelectedRow();
 	         model.setRowCount(0);
