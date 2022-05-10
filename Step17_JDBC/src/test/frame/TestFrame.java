@@ -89,7 +89,7 @@ public class TestFrame extends JFrame implements ActionListener{
 	     }                       
 	   }
 	        
-	   //main  메소드
+	   // main  메소드
 	   public static void main(String[] args) {
 	      TestFrame f=new TestFrame();
 	      f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
