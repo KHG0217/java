@@ -16,5 +16,5 @@ public class MainClass05 {
 		name="원숭이";
 		// name 변수를 비우기. (null은 참조 데이터 type가 담길 수 있는 빈 공간이다.)
 		name=null;
-}
+	}
 }

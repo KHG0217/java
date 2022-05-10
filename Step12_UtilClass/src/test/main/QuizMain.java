@@ -39,6 +39,7 @@ public class QuizMain {
       List<Integer> nums=new ArrayList<>(st);
       //정렬하기.
       Collections.sort(nums);
+
       
       //출력하기
       for(int tmp:nums) {

@@ -15,7 +15,7 @@ public class MainClass05 {
 	
 	
 	public static void main(String[] args) {
-		useWEapon(w1);
+		useWeapon(w1);
 		
 		Weapon w2= new Weapon() {
 
@@ -24,9 +24,9 @@ public class MainClass05 {
 			}		
 		};
 		
-		useWEapon(w2);
+		useWeapon(w2);
 		
-		useWEapon(new Weapon() {
+		useWeapon(new Weapon() {
 
 			public void attack() {
 				System.out.println("엥? 이것도 공격해버려");	
@@ -34,7 +34,7 @@ public class MainClass05 {
 		});
 	}
 	
-	public static void useWEapon(Weapon w) {
+	public static void useWeapon(Weapon w) {
 		w.prepare();
 		w.attack();
 	}

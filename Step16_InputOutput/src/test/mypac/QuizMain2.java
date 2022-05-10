@@ -106,20 +106,10 @@ public class QuizMain2 extends JFrame implements ActionListener {
 				br=new BufferedReader(fr);
 				try {
 					while(true) {
-					Set<String> names= new HashSet<>();
 					String msg=br.readLine();
 					if(msg==null) 
 						break;											
-					names.add(msg);
-					Iterator<String> it=names.iterator();
-					while(it.hasNext()) {
-						String item=it.next();
-						System.out.println(item);
-						area.setText(item);
-						
-					}
-					
-				
+					area.append(msg);
 					}
 					
 				} catch (IOException e1) {
