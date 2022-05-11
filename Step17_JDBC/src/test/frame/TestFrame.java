@@ -111,6 +111,8 @@ public class TestFrame extends JFrame implements ActionListener{
 	         boolean isSuccess=dao.insert(dto);
 	         if(isSuccess) {
 	            System.out.println(name+" 의 정보를 추가 했습니다.");
+	            inputName.setText("");
+	            inputAddr.setText("");
 	            model.setRowCount(0);
 	            displayMember();
 	            
@@ -120,14 +122,17 @@ public class TestFrame extends JFrame implements ActionListener{
 
 	      }else if(command.equals("delete")){
 	    	  int selectedIndex=table.getSelectedRow();
-
-	    	  int num=(int) model.getValueAt(selectedIndex, 0);
-	    	  dao.delete(num);
-	    	
-	         //커서가 가르키는거에 번호를 넣어야되는데 ?
-	         table.getSelectedRow();
-	         model.setRowCount(0);
-	         displayMember();
+	    	  int num=(int) model.getValueAt(selectedIndex, 0);  
+	    	  boolean isSuccess=dao.delete(num);
+	    	  if(isSuccess) { 
+	    		  System.out.println(num+"번의 정보를 삭제했습니다.");
+	    		  table.getSelectedRow();
+		    	  model.setRowCount(0);
+		    	  displayMember();
+	    	  }else {
+	    		  System.out.println("삭제를 실패했습니다.");
+	    	  }
+	    	  
 	      }
 	      
 	   }
