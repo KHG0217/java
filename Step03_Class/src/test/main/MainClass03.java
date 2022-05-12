@@ -24,7 +24,7 @@ public class MainClass03 {
 		 *   
 		 *   or
 		 *   
-		 *   let ma={num:1, name:"김구라", addr:"노량진";};
+		 *   let m1={num:1, name:"김구라", addr:"노량진";};
 		 */
 		
 		

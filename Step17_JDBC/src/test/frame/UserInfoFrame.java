@@ -45,7 +45,7 @@ public class UserInfoFrame extends JFrame implements ActionListener, PropertyCha
 	     
 	   //생성자
 	   public UserInfoFrame() {
-		   Icon = new ImageIcon("사진을 넣을 파일경로");
+		   Icon = new ImageIcon("panel에 사진을 넣을 파일경로");
 		   
 		  setLayout(new BorderLayout());
 	      
@@ -209,7 +209,6 @@ public class UserInfoFrame extends JFrame implements ActionListener, PropertyCha
 	      if(command.equals("save")) {
 	    	 //남자선택하거나 여자선택할때
 	    	  if(man.isSelected()||woman.isSelected()) {
-	    		//1.입력한 이름과 주소를 불러온다.
 			     //if문으로 남자선택,여자선택분기
 	    		  if(man.isSelected()) {
 	    			 name=inputName.getText()+" (M)";
@@ -249,6 +248,7 @@ public class UserInfoFrame extends JFrame implements ActionListener, PropertyCha
 		         }
 	    	 }else {//성별체크를 안할시
 	    		 JOptionPane.showMessageDialog(this, "성별을 체크해주세요.");
+	    		 return;
 	    	 }
 	    	 
 
@@ -271,7 +271,7 @@ public class UserInfoFrame extends JFrame implements ActionListener, PropertyCha
 	    	  
 	    	  //4. refresh !
 	    	  this.displayMember();	    	     	  	    		 
-	      //갱신버튼을 눌렀을때 날짜와 현재시간으로 갱신한다.
+	      //날짜갱신버튼을 눌렀을때 날짜와 현재시간으로 갱신한다.
 	      }else if(command.equals("new")) {
 	    	  int[] rows = table.getSelectedRows();
 	    	  if(rows.length ==0) {

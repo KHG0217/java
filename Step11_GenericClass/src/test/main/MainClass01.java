@@ -12,6 +12,7 @@ public class MainClass01 {
 		box1.setItem(new Apple());
 		//메소드가 리턴해주는 Apple type 받아오기.
 		Apple item1=box1.getItem();
+		System.out.println(item1);
 		
 		//Generic 클래스를 Banana로 지정해서 FruitBo 객체를 생성해서 위와 비슷한 작업을 해보세요
 		FruitBox<Banana> box2 =new FruitBox<Banana>();

@@ -9,6 +9,9 @@ public class study01 {
 		int num3=1000;
 		long num4=10;
 		
+		String str="abcde12345";
+		int size=str.length();
+		System.out.println(size);
 		byte tmp1=(byte)num2;
 		int tmp2=(int)num4;
 		byte tmp3=(byte)num3;

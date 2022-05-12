@@ -4,7 +4,7 @@ import study.mypac.Car;
 import study.mypac.Info;
 import study.mypac.Brand;
 
-public class test {
+public class test1 {
 	public static void main(String[] args) {
 		Info m1=new Info(1, "±èÇõ±Ô", true, "±¤Áø±¸", "Ä¡Å²");
 		Brand b1= new Brand();

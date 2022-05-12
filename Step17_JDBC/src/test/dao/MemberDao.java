@@ -158,4 +158,33 @@ public class MemberDao {
 		return dtoList;					
 	}
 	
+	   // 회원 한명의 정보를 이름으로 검색해주는 메소드
+	   public List<MemberDto> getDataByName(String name){
+	      List<MemberDto> list = new ArrayList<>();
+	         MemberDto dto;
+	      
+	         //SELECT 작업을 위해서 필요한 객체의 참조값을 담을 지역변수 미리 만들기 
+	         Connection conn=null;
+	         PreparedStatement pstmt=null;
+	         ResultSet rs=null;
+	         try {
+	            conn = new DBConnect().getConn();
+	            String sql = "SELECT * FROM member" + " WHERE name LIKE '%'||?||'%'" + " ORDER BY num ASC";
+	            pstmt = conn.prepareStatement(sql);
+	            pstmt.setString(1, name);
+	            rs = pstmt.executeQuery();
+	         
+	            while(rs.next()) {
+	               dto = new MemberDto();
+	               dto.setNum(rs.getInt("num"));
+	               dto.setName(rs.getString("name"));
+	               dto.setAddr(rs.getString("addr"));
+	               list.add(dto);
+	            }
+	         } catch (SQLException e) {
+	            e.printStackTrace();
+	         }
+	         return list;
+	      }
+	
 }
