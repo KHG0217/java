@@ -42,8 +42,7 @@ public class UserInfoFrame extends JFrame implements ActionListener, PropertyCha
 	   ButtonGroup group;
 	   JCheckBox man;
 	   JCheckBox woman;
-	   
-	   
+	     
 	   //생성자
 	   public UserInfoFrame() {
 		   Icon = new ImageIcon("사진을 넣을 파일경로");
