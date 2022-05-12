@@ -109,8 +109,7 @@ public class UserInfoFrame extends JFrame implements ActionListener, PropertyCha
 	    		    super.paintComponent(g);
 	    		   }
 	    		  };
-	    		 
-	    	 
+	    		 	    	 
 	      panel.add(label1);
 	      panel.add(inputName);
 	      panel.add(label2);
