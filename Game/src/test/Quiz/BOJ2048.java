@@ -26,17 +26,16 @@ public class BOJ2048 {
 		 int a =Integer.parseInt(st.nextToken());
 		 int b =Integer.parseInt(st.nextToken());
 		 int c =Integer.parseInt(st.nextToken());
-		 
-		 
-	            	  
+		 int d =(a==b)||(a==c)?a:b;
+		             	  
 	      if((a==b)&&(a==c)) {
 	         System.out.println(10000+a*1000);
-	      }else if((a==b)||(a==c)) {
-	         System.out.println(1000+a*100);
-	      }else if((b==c)) {
-	         System.out.println(1000+b*100);
-	      }else if((a!=b)&&(a!=c)) {
 	         int big = (a>b)&&(a>c)?a:(c>b?c:b);
+	      }else if((a==b)||(a==c)){ 
+	            
+	      }else{
+	         //Math.man(int a, int b) 크면 a 아니면 b 리턴
+	    	  int big = Math.max(a,Math.max(b, c));
 	         System.out.println(big*100);
 	      }
 	   }
