@@ -33,7 +33,7 @@ package test.Quiz;
  * \ 특수기호를 찾을때
  */
 
-class P72410 {
+class P72410_아이디추천 {
     public String solution(String new_id) {
         String str = new_id;
         str=str.toLowerCase();

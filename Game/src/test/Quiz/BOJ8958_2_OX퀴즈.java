@@ -6,7 +6,7 @@ import java.io.BufferedReader;
 
 
 
-public class BOJ8958_2 {
+public class BOJ8958_2_OXÄûÁî {
 	 public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		
 		int count=Integer.parseInt(br.readLine());		

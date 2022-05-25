@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class BOJ2048 {
+public class BOJ2048_주사위게임 {
 	 public static void main(String[] args) throws NumberFormatException, IOException {		   
 		 //BufferedReader 선언 Scanner와 유사함
 		 BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
