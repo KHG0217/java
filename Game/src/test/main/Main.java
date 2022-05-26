@@ -15,7 +15,7 @@ public class Main {
 		d[0]=2;
 		d[1]=2;
 		d[2]=3;
-		d[3]=3;
+		d[3]=3; 
 		
 		
 		for(int i=0; i<d.length; i++) {
