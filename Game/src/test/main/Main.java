@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Collections;
 import java.util.Iterator;
 
-
 public class Main {
 	public static void main(String[] args) {
 		String[] id_list = new String[4];
@@ -32,5 +31,5 @@ public class Main {
 		int[] answer = {};
 	
 	}
-	
+
 }
