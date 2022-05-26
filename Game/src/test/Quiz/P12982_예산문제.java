@@ -1,4 +1,4 @@
-package P12982;
+package test.Quiz;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -15,20 +15,10 @@ class KHG0217 {
 
 		Collections.sort(set1);
 
-		int a = set1.get(0);
-
-		while (budget - set1.get(0) >= 0) {
-			if (budget - set1.get(0) == 0) {
+		for (int i = 0; i < set1.size(); i++) {
+			if (budget - set1.get(i) >= 0) {
+				budget = budget - set1.get(i);
 				answer++;
-				break;
-			} else {
-				for (int i = 0; i < set1.size(); i++) {
-					if (budget - set1.get(i) >= 0) {
-						budget = budget - set1.get(i);
-						answer++;
-					}
-				}
-				break;
 			}
 		}
 		return answer;
