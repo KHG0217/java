@@ -29,8 +29,8 @@ public class P92334_신고결과받기 {
 			//key=[value] -> 찔린id=[찌른id]
 			answerMap.put(id_list[i], 0);  // 메일 수는 모두 0 으로 초기화
 		}
-		System.out.println("[STEP 1] reportedMap : " + reportedMap);
-		System.out.println("[STEP 1] answerMap : " + answerMap);
+		System.out.println("reportedMap : " + reportedMap);
+		System.out.println("answerMap : " + answerMap);
 		
 		
 		/*
@@ -45,7 +45,7 @@ public class P92334_신고결과받기 {
 			//reportedID(찔린key) <-찌른id를 벨류로 추가 
 			
 		}
-		System.out.println("[STEP 2] reportedMap 에 신고 기록 세팅 : " + reportedMap);
+		System.out.println("reportedMap 에 신고 기록 세팅 : " + reportedMap);
 		
 		
 		/*
@@ -68,7 +68,7 @@ public class P92334_신고결과받기 {
 				}
 			}
 		}
-		System.out.println("[STEP 3] answerMap 에 메일 수 세팅 : " + answerMap);
+		System.out.println("answerMap 에 메일 수 세팅 : " + answerMap);
 		
 		
 		/*
@@ -76,9 +76,9 @@ public class P92334_신고결과받기 {
 		 */
 		for (int i = 0; i < id_list.length; i++) {
 			answer[i] = answerMap.get(id_list[i]);
-			System.out.println("[STEP 4] answer : " +answer[i]);
+			System.out.println("answer : " +answer[i]);
 		}
 	
 	}
 }
-}
+
