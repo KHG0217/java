@@ -7,7 +7,7 @@ public class Main  {
 	static int[] result= new int[3]; //대상 숫자를 담아둘 배열.
 	static int answer;
 	public static void main(String[] args) {	
-
+		 Main ex = new Main();
 		combination(0, 0);	
 		System.out.println(answer);
 

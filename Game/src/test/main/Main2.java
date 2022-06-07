@@ -16,15 +16,15 @@ public class Main2  {
 	    }
 
 	    public void doCombination(int[] combArr, int n, int r, int index, int target, int[] arr){
-	    	System.out.println("=> "+n+" "+r+" "+index+" "+target);
+	    	//System.out.println("=> "+n+" "+r+" "+index+" "+target);
 	        
 	    	// r ==0 이란 것은 뽑을 원소를 다 뽑았다는 뜻.
 	    	if(r == 0){
 	        	System.out.println(Arrays.toString(combArr));
-	            for(int i=0; i<index; i++)System.out.print(arr[combArr[i]] + " ");
+	            for(int i=0; i<index; i++){
+	            	//System.out.print(arr[combArr[i]] + " ");
 	          
-	            System.out.println();
-	        
+	            }
 	        //끝까지 다 검사한 경우..1개를 뽑은 상태여도 실패한 경우임 무조건 return 으로 종료
 	        }else if(target == n){ 
 	        	
